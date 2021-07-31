@@ -1,0 +1,2 @@
+RewriteRule ^(([^/]+/)*[^.]+)$ /$1.html [L]
+ErrorDocument 404 https://www.thegioididong.com/error.html

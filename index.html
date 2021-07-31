@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="weather">
+            <div class="weather-sidebar">
+                <div class="sidebar-logo">
+                    <span>w</span>
+                </div>
+                <ul class="menu">
+                    <li  class="uil uil-dashboard menu-item "></li>
+                    <li  class="uil uil-location-arrow menu-item active"></li>
+                    <li  class="uil uil-filter menu-item"></li>
+                    <li  class="uil uil-share-alt menu-item"></li>
+                    <li  class="uil uil-setting menu-item"></li>
+                </ul>
+            </div>
+            <main class="weather-main">
+                <header class="header">
+                    <div class="header-name">
+                        <div class="header-name-country">
+                            <h2 class="country-name">Việt Nam</h2>
+                            <p class="city-name">Hồ Chí Minh</p>
+                        </div>
+                        <div class="header-icon">
+                            <img src="./assets/img/icons/3.svg" alt="" class="header-img-weather">
+                        </div>
+                    </div>
+                    <div class="header-search">
+                        <i class="uil uil-search search-icon"></i>
+                        <input type="text" class='search-input' placeholder="Tìm kiếm thành phố">
+                        <input type="hidden"  class='search-input-default' value="Cua Lo">
+                    </div>
+                </header>
+                <section class="section">
+                    <div class="wp"></div>
+                    <div class="wp active weather-city-if">
+                        <div>
+                            <div class="city-temperature">
+                                <div class="city-temperature-bg">
+                                    <div class="city-temperature-clear">
+                                        <p class="city-temperature-name">clear</p>
+                                        <h5 class="city-temperature-inner"><span class="temperature--">32</span> <sup>o</sup><sub>c</sub></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="city-weather-detail">
+                                <p>Chi tiết</p>
+                                <ul class="detail-list">
+                                    <li class="detail-item">
+                                        <i class="uil uil-wind"></i>
+                                        <div class="detail-if">
+                                            <span>Gió</span>
+                                            <p></p>
+                                        </div>
+                                    </li>
+                                    <li class="detail-item">
+                                        <i class="uil uil-temperature"></i>
+                                        <div class="detail-if">
+                                            <span>Real Feel</span>
+                                            <p></p>
+                                        </div>
+                                    </li>
+                                    <li class="detail-item">
+                                        <i class="uil uil-sunset"></i>
+                                        <div class="detail-if">
+                                            <span>Tia UV</span>
+                                            <p></p>
+                                        </div>
+                                    </li>
+                                    <li class="detail-item">
+                                        <i class="uil uil-windy"></i>
+                                        <div class="detail-if">
+                                            <span>Khí áp</span>
+                                            <p></p>
+                                        </div>
+                                    </li>
+                                    <li class="detail-item">
+                                        <i class="uil uil-moon-eclipse"></i>
+                                        <div class="detail-if">
+                                            <span>Tầm nhìn</span>
+                                            <p></p>
+                                        </div>
+                                    </li>
+                                    <li class="detail-item">
+                                        <i class="uil uil-raindrops-alt"></i>
+                                        <div class="detail-if">
+                                            <span>Độ ẩm</span>
+                                            <p></p>
+                                        </div>
+                                    </li>
+                                    <li class="detail-item">
+                                        <i class="uil uil-clouds"></i>
+                                        <div class="detail-if">
+                                            <span>Mật độ mây</span>
+                                            <p></p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wp"></div>
+                    <div class="wp"></div>
+                    <div class="wp setting">
+                        <div>
+                            <div class="setting-default">
+                                <div class="setting-dark-light">
+                                    <p>Giao diện: sáng/tối</p>
+                                    <p><i class="dark-light uil uil-sun"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <div class="sidebar-right">
+                <div class="sidebar-right-header">
+                    <div class="user-right-header">
+                        <div class="user-avatar">
+                            <img src="https://images.unsplash.com/photo-1580219818969-0c43b9f75dbb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZsb3dlciUyMGZpZWxkfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                        </div>
+                        <p class="user-name">Nhat Nguyen</p>
+                        <i class="uil uil-angle-down"></i>
+                    </div>
+                </div>
+
+                <div class="sidebar-right-content">
+                    <div class="weather--day">
+                        <h5>Dự báo trong 5 ngày</h5>
+                        <ul class="weather--day-list">
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal popup  -->
+    <div class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <i class="uil uil-multiply modal-close"></i>
+                <h5 class="modal-alert">
+
+                </h5>
+            </div>
+        </div>
+    </div>
+    
+       
+      
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/setting.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          loop: true,
+          slidesPerView: 3,
+          spaceBetween: 30,
+          centeredSlides: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+</body>
+</html>
